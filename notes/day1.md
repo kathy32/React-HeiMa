@@ -9,4 +9,6 @@
     - 打包的入口是```src``` -> ```index.js```
     - 打包的输出文件是：```dist``` -> ```main.js```
 6. 运行 ```webpack``` 得到：
-![20201123160548](https://bevishe.oss-cn-hangzhou.aliyuncs.com/img/20201123160548.png)
+  ![20201123160548](https://bevishe.oss-cn-hangzhou.aliyuncs.com/img/20201123160548.png)
+    - 运行效果如下：
+  ![20201123161631](https://bevishe.oss-cn-hangzhou.aliyuncs.com/img/20201123161631.png) 
