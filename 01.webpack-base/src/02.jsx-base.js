@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 
 // 2. 创建虚拟 DOM 元素
 // 什么是虚拟 DOM？ 用 js 对象的形式来表示 DOM 和 DOM 之间的嵌套关系
-const mydiv = React.createElement('div', {id:'mydiv', title:'divbox'}, 'div元素')
+// const mydiv = React.createElement('div', {id:'mydiv', title:'divbox'}, 'div元素')
 
 
 // HTML 是最优秀的标记语言
