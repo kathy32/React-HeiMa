@@ -20,6 +20,12 @@ module.exports = {
     rules: [  // 第三方匹配规则
       { test:/\.js|jsx$/, use:'babel-loader', exclude:/node_modules/},  // 千万别忘记 exclude 排除项
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],  // 表示这几个文件后缀名可以省略
+    alias: {  // 表示别名
+      '@': path.join(__dirname, './src')  // @ 表示根目录中 src 这一层路径
+    }
   }
   
 }
