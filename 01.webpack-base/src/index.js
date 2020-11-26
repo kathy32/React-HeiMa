@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // 需要配置才能省去 .jsx 后缀名
-import '@/06.class-base'
+import '@/07.class-method'
 
 
 const mySpider = {
