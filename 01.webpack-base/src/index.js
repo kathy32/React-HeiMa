@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import CmtList from '@/components/CmtList'
+import CmtList from '@/components/CmtList2'
 
 
 // 3. 调用 render 函数渲染

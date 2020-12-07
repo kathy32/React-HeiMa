@@ -19,6 +19,7 @@ module.exports = {
   module: { // 所有第三方模块的配置规则
     rules: [  // 第三方匹配规则
       { test:/\.js|jsx$/, use:'babel-loader', exclude:/node_modules/},  // 千万别忘记 exclude 排除项
+      { test:/\.css$/, use:['style-loader', 'css-loader']}, // 打包处理 css 样式表的第三方 loader
     ]
   },
   resolve: {
