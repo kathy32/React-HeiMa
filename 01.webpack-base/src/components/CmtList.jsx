@@ -20,6 +20,11 @@ export default class CmtList extends React.Component {
 
   render () {
     return <div>
+      {/* 注意：在 jsx 中，如果想写行内样式，不能为 style 设置字符串的值 */}
+      {/* 应该是： style = {{ color: 'red' }} */}
+      {/* 在行内样式中，如果是数值类型样式，则可以不使用引号，如果是字符串，必须使用引号包裹 */}
+      <h1 style={{color:'red', fontSize:'35px'}}>这是评论列表组件</h1>
+
       {this.state.commentList.map(item => 
         <CmtItem {...item} key={item.id}></CmtItem>)}
     </div>
