@@ -19,13 +19,15 @@ module.exports = {
   module: { // 所有第三方模块的配置规则
     rules: [  // 第三方匹配规则
       { test:/\.js|jsx$/, use:'babel-loader', exclude:/node_modules/},  // 千万别忘记 exclude 排除项
-      { test:/\.css$/, use:[{loader:'style-loader'}, {loader:'css-loader?modules',options:{modules:{localIdentName:'[path][name]__[local]--[hash:base64:5]'}}}] }, // 打包处理 css 样式表的第三方 loader，追加参数 ?modules 表示 css 样式表启用模块化
+      { test:/\.css$/, use:[{loader:'style-loader'}, {loader:'css-loader'}] }, // 打包处理 css 样式表的第三方 loader，追加参数 ?modules 表示 css 样式表启用模块化
+      { test:/\.ttf|woff|woff2|eot|svg$/, use:'url-loader'}, // 打包处理字体文件的 loader
+      { test:/\.scss$/, use:[{loader:'style-loader'},{loader:'css-loader?modules',options:{modules:{localIdentName:'[path][name]__[local]--[hash:base64:5]'}}},{loader:'sass-loader'}]},
     ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],  // 表示这几个文件后缀名可以省略
     alias: {  // 表示别名
-      '@': path.join(__dirname, './src')  // @ 表示根目录中 src 这一层路径
+      '@': path.join(__dirname, './src'),  // @ 表示根目录中 src 这一层路径
     }
   }
   

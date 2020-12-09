@@ -3,7 +3,7 @@ import React from 'react'
 
 // import styles from '@/components/styles'
 
-import cmtItemCss from '@/css/cmtItem.css'
+import cmtItemCss from '@/css/cmtItem.scss'
 
 
 export default function CmtItem (props) {

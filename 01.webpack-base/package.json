@@ -11,21 +11,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.9",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
-    "style-loader": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "url-loader": "^4.1.1",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
