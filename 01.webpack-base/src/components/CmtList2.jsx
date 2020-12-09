@@ -10,7 +10,7 @@ console.log(cmtListCss) // {title: "fB5dQcJ7uahG67KLqVHou"} 是一个对象变�
 // 则可以省略 node_modules 这一层目录，直接以包名开始引入自己的模块或样式表
 // 自己规定：第三方样式表以 .css 结尾，这样不要为普通的 .css 启用模块
 //          自己的样式表以 .scss 或 .less 结尾，只为 .scss 或 .less 文件启用模块化
-import bootcss from 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
 import CmtItem from '@/components/CmtItem2'
 
@@ -31,7 +31,6 @@ export default class CmtList extends React.Component {
 
   render () {
     return <div>
-      {/* <button className={bootcss.btn}>按钮</button> */}
       <button className='btn btn-primary'>按钮</button>
 
       <h1 className={[cmtListCss.title, 'test'].join(' ')}>这是评论列表组件</h1>
