@@ -6,7 +6,8 @@ export default class BindEvent extends React.Component {
     super()
     // 私有数据
     this.state = {
-      msg: '哈哈哈'
+      msg: '哈哈哈',
+      name: 'kathy'
     }
   }
 
@@ -26,7 +27,15 @@ export default class BindEvent extends React.Component {
 
     // 修改状态值推荐使用 this.setState() 而不是 this.state.msg 赋值（单向数据绑定）
     this.setState({
+      // 只会把对应的 state 状态更新而不会覆盖其他的 state 状态
       msg: 'hahaha~' + arg1
+    }, function () {
+      console.log(this.state.msg)
     })
+
+
+    // 注意：this.setState 是异步方法
+    // 如果调用完 this.setState 后需要拿到最新 state，推荐 this.setState({}, callback)
+    console.log(this.state.msg) // 哈哈哈
   }
 }
