@@ -39,3 +39,14 @@ export default class BindEvent extends React.Component {
     console.log(this.state.msg) // 哈哈哈
   }
 }
+
+//#region 新知识
+
+// 好处：
+// 里面的注释块 可以收缩
+
+
+//#endregion 
+
+
+
