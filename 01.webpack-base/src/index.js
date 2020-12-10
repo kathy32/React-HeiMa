@@ -2,10 +2,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import BindEvent from '@/components/BindEvent'
+import BindInputValue from '@/components/BindInputValue'
 
 
 // 3. 调用 render 函数渲染
 ReactDOM.render(<div>
-  <BindEvent></BindEvent>
+  <BindInputValue></BindInputValue>
 </div>, document.getElementById('app'))
